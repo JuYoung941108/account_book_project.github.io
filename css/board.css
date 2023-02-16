@@ -1,0 +1,220 @@
+.boardMenuForm {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.boardMenu {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.boardMenu>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.board {
+    box-sizing: border-box;
+    width: 900px;
+    margin: auto;
+}
+
+.board>thead>tr>th {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.board>tbody>tr>td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.board>tbody>tr>td>a {
+    text-decoration: none;
+    color: black;
+}
+
+.boardNum,
+.boardWiter,
+.boardDate,
+.boardChk {
+    width: 100px;
+}
+
+.boardTitle {
+    width: 500px;
+}
+
+.searchForm {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.pagination {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 80px;
+    font-size: 1.1rem;
+}
+
+.searchSubForm {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding-left: 55px;
+    justify-content: center;
+}
+
+.searchIcon {
+    margin-right: 5px;
+    text-align: center;
+    color: black;
+}
+
+.searchBar {
+    width: 400px;
+    height: 25px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.searchBtn {
+    width: 70px;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.wirteBtn {
+    position: relative;
+    left: 340px;
+    box-sizing: border-box;
+    width: 70px;
+    font-size: 1rem;
+}
+
+/* boardWrite */
+.boardWriteForm {
+    box-sizing: border-box;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.boardWriteSubForm1 {
+    box-sizing: border-box;
+    display: flex;
+    width: 65%;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.boardWriteSubForm2 {
+    box-sizing: border-box;
+    display: flex;
+    width: 35%;
+    line-height: 30px;
+    margin-bottom: 5px;
+    justify-content: end;
+    text-align: center;
+}
+
+#boardWriteLabel {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#boardWriteContentForm {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#boardWriteTitle>input {
+    box-sizing: border-box;
+    display: inline;
+    width: 540px;
+    height: 30px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#boardWriteContentForm>form>p>textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    resize: none;
+    /* 사이즈 고정 */
+}
+
+.writeRegBtn {
+    position: relative;
+    left: 750px;
+    bottom: -10px;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+.postNavForm {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    /* justify-content: end; */
+    margin-top: 10px;
+}
+
+.postNavSubForm {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.boardList {
+    position: relative;
+    left: 747px;
+    top: -55px;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+
+#title {}
+
+#writer {
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: gray;
+}
+
+/* Ajax 비동기 처리 시 게시판 목록 색상 변경*/
+.active {
+    font-weight: bold;
+    background-color: #efefef;
+}

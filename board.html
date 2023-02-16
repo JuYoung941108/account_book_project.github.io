@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Book</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/board.css">
+    <script defer src="js/header.js"></script>
+    <script defer src="js/board.js"></script>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menuIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+        <div class="menu">
+            <a href="board.html">공지사항</a>
+            <a href="accountBookMenual.html">홈페이지 사용법</a>
+            <a href="accountBook.html">월별 가계부</a>
+            <a href="assetStatus.html">자산현황</a>
+            <a href="board.html">자유 게시판</a>
+            <a href="board.html">질문 게시판</a>
+            <a href="board.html">건의 게시판</a>
+        </div>
+
+        <a href="index.html">Account Book</a>
+
+        <div class="headerSignForm">
+            <a href="signUp.html">간편 회원가입</a>
+            <span>이메일</span>
+            <input type="email" placeholder="user@email.com">
+            <span>패스워드</span>
+            <input type="password" placeholder="password">
+            <input class="signUpButton" type="button" value="로그인" name="signUp">
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="title">게시판</div>
+        <div class="boardMenuForm">
+            <div class="boardMenu"><a class="" href="javascript:void(0)">자유 게시판</a></div>
+            <div class="boardMenu"><a class="" href="javascript:void(0)">질문 게시판</a></div>
+            <div class="boardMenu"><a class="" href="javascript:void(0)">건의 게시판</a></div>
+        </div>
+        <table class="board">
+            <thead>
+                <tr>
+                    <th class="boardNum">글 번호</th>
+                    <th class="boardTitle">제목</th>
+                    <th class="boardWiter">작성자</th>
+                    <th class="boardDate">작성일</th>
+                    <th class="boardChk">조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>헌터X헌터 개미편 미만잡ㅠㅠ</td>
+                    <td>곤</td>
+                    <td>2023-02-16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>체인소맨이 제일 재밌어요.</td>
+                    <td>덴지</td>
+                    <td>2023-02-16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>도쿄 리벤저스 많이 사랑해주세요!</td>
+                    <td>신 유우키</td>
+                    <td>2023-02-16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>나는 귀여워</td>
+                    <td>루피</td>
+                    <td>2023-02-16</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="boardRead.html">자유 게시판입니다.</a></td>
+                    <td>admin</td>
+                    <td>2023-02-16</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="searchForm">
+            <div class="pagination">1 2 3 4 5 <input class="wirteBtn" type="button" value="글쓰기" onclick="boardWrite()"></div>
+            
+            <div class="searchSubForm">
+            <div class="searchIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </div>
+            <input class="searchBar" type="text" placeholder="검색창">
+            <input class="searchBtn" type="button" value="검색" onclick="alert('테스트')">
+        </div>
+        </div>
+    </section>
+    <footer>Footer</footer>
+</body>
+
+</html>

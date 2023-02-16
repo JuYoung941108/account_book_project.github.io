@@ -1,71 +1,66 @@
 header {
+    display: flex;
     width: 100%;
     height: 50px;
-    display: flex;
     justify-content: space-between;
     background-color: #11264F;
 }
 
 header>a {
-    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    width: 55%;
     height: 50px;
     line-height: 50px;
-    display: block;
-    box-sizing: border-box;
-    padding-left: 35%;
+    padding-left: 38%;
     text-align: center;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
     font-size: 2rem;
     color: white;
 }
 
 .menuIcon>svg {
+    box-sizing: border-box;
     width: 40px;
     height: 50px;
-    box-sizing: border-box;
     color: white;
 }
 
-.signForm {
-    width: 40%;
-    display: flex;
-    justify-content: end;
+.headerSignForm {
     box-sizing: border-box;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
 }
 
-.signForm>a {
+.headerSignForm>a {
+    box-sizing: border-box;
     line-height: 50px;
     margin-right: 10px;
-    box-sizing: border-box;
+    text-decoration: none;
     text-align: center;
     font-weight: bold;
-    text-decoration: none;
     color: white;
 }
 
-.signForm>span {
+.headerSignForm>span {
+    box-sizing: border-box;
     line-height: 50px;
     margin: 0px 10px 0px 0px;
-    box-sizing: border-box;
-    color: white;
     font-weight: bold;
+    color: white;
 }
 
-.signForm>input {
+.headerSignForm>input {
     margin: 10px 10px 10px 0px;
     font-size: 0.9;
     font-weight: bold;
 }
 
 .signUpButton {
-    width: 70px;
-    height: 30px;
+    width: 65px;
     margin: 10px 10px 10px 10px;
-    background-color: gray;
-    color: white;
-    border: 0px;
-    border-radius: 5px;
 }
 
 .menu {
@@ -79,38 +74,38 @@ header>a {
 
 .menu>a {
     display: block;
-    font-size: 1.5rem;
+    margin: 10px 0px 20px 10px;
     text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    margin: 10px 0px 20px 10px;
 }
 
 @media(max-width:1000px) {
     header>a {
-        width: 30%;
         box-sizing: border-box;
+        width: 30%;
         padding-left: 10px;
-        text-align: left;
-        font-weight: bold;
         text-decoration: none;
+        text-align: left;
         font-size: 1.2rem;
+        font-weight: bold;
         color: white;
     }
 
-    .signForm>span {
+    .headerSignForm>span {
         display: none;
     }
 
-    .signForm {
+    .headerSignForm {
         width: 70%;
     }
 
-    .signForm>a {
-        line-height: 50px;
+    .headerSignForm>a {
         box-sizing: border-box;
-        font-weight: bold;
+        line-height: 50px;
         text-decoration: none;
+        font-weight: bold;
         color: white;
     }
 

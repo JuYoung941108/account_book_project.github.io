@@ -1,10 +1,76 @@
-section{
+section {
+    display: block;
     width: 100%;
     height: 1000px;
     background-color: lightgray;
 }
 
-section>.testText{
-    padding:10px;
+.title {
+    font-size: 2.5rem;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+}
+
+.signForm {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#signSubForm {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.signForm>input{
+    margin-top: 30px;
+}
+
+.signForm>#signSubForm>label {
+    display: flex;
+    width: 65px;
+}
+
+.signForm>#signSubForm>input {
+    width: 170px;
+    margin-right: 10px;
+}
+
+.signUpBtn{
+    font-size: 1rem;
+}
+
+@media(max-width:1000px) {
+    .signForm {
+        width: 60%;
+    }
+
+    .headerSignForm>span {
+        display: none;
+    }
+
+    .headerSignForm {
+        width: 70%;
+    }
+
+    .headerSignForm>a {
+        box-sizing: border-box;
+        line-height: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+}
+
+/* 나중에 지우기 */
+section>.testText {
+    display: block;
+    padding: 10px;
+    text-align: center;
     font-size: 2rem;
 }

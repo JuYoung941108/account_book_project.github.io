@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/board.css">
     <script defer src="js/header.js"></script>
+    <script defer src="js/board.js"></script>
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
@@ -42,12 +44,28 @@
             <input type="email" placeholder="user@email.com">
             <span>패스워드</span>
             <input type="password" placeholder="password">
-            <input class="signUpButton" type="button" value="로그인" name="signUp" onclick="alert('테스트')">
+            <input class="signUpButton" type="button" value="로그인" name="signUp">
         </div>
         </div>
     </header>
+    
     <section>
-        <div class="testText">Section</div>
+        <div class="title">글쓰기</div>
+        <div class="boardWriteForm">
+            <div class="boardWriteSubForm1">
+                제목: <span id="boardWriteTitle"><input type="text" placeholder="제목을 입력해 주세요."></div>
+            <div class="boardWriteSubForm2">
+                글 번호: <span id="boardWriteLabel">0</span>
+                작성자: <span id="boardWriteLabel">admin</span><br></div>
+            내용: <div id="boardWriteContentForm">
+                <form>
+                    <p><textarea placeholder="내용을 입력해 주세요."></textarea></p>
+                </form>
+            </div>
+                <input class="writeRegBtn" type="submit" value="취소" onclick="writeCancel()">
+                <input class="writeRegBtn" type="submit" value="완료" onclick="alert('테스트')">
+            </div>
+        </div>
     </section>
     <footer>Footer</footer>
 </body>
