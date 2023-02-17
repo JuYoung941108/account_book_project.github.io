@@ -29,7 +29,7 @@
 
 .board>thead>tr>th {
     padding: 10px;
-    background-color: white;
+    background-color: lightgray;
     border: 1px solid black;
 }
 

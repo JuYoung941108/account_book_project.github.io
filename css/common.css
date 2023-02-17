@@ -10,4 +10,6 @@ body {
     height: 100%;
     display: block;
     font-family: 'Pretendard-Regular';
+    font-weight: 700;
+    overflow: scroll;
 }
