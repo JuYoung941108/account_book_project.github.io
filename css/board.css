@@ -1,4 +1,4 @@
-.boardMenuForm {
+.board-menu-form {
     display: flex;
     width: 900px;
     margin: auto;
@@ -6,7 +6,7 @@
     font-size: 2rem;
 }
 
-.boardMenu {
+.board-menu {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -15,7 +15,7 @@
     border: 1px solid black;
 }
 
-.boardMenu>a {
+.board-menu>a {
     display: block;
     text-decoration: none;
     color: black;
@@ -45,18 +45,18 @@
     color: black;
 }
 
-.boardNum,
-.boardWiter,
-.boardDate,
-.boardChk {
+.board-num,
+.board-writer,
+.board-date,
+.board-chk {
     width: 100px;
 }
 
-.boardTitle {
+.board-title {
     width: 500px;
 }
 
-.searchForm {
+.serach-form {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +74,7 @@
     font-size: 1.1rem;
 }
 
-.searchSubForm {
+.search-sub-form {
     box-sizing: border-box;
     display: flex;
     width: 100%;
@@ -82,13 +82,13 @@
     justify-content: center;
 }
 
-.searchIcon {
+.search-icon {
     margin-right: 5px;
     text-align: center;
     color: black;
 }
 
-.searchBar {
+.search-bar {
     width: 400px;
     height: 25px;
     margin-right: 5px;
@@ -96,13 +96,13 @@
     font-size: 1rem;
 }
 
-.searchBtn {
+.search-btn {
     width: 70px;
     margin-right: 5px;
     font-size: 1rem;
 }
 
-.wirteBtn {
+.wirte-btn {
     position: relative;
     left: 340px;
     box-sizing: border-box;
@@ -111,7 +111,7 @@
 }
 
 /* boardWrite */
-.boardWriteForm {
+.board-write-form {
     box-sizing: border-box;
     width: 900px;
     display: flex;
@@ -119,7 +119,7 @@
     margin: auto;
 }
 
-.boardWriteSubForm1 {
+.board-write-sub-form1 {
     box-sizing: border-box;
     display: flex;
     width: 65%;
@@ -127,7 +127,7 @@
     margin-bottom: 5px;
 }
 
-.boardWriteSubForm2 {
+.board-write-sub-form2 {
     box-sizing: border-box;
     display: flex;
     width: 35%;
@@ -137,19 +137,19 @@
     text-align: center;
 }
 
-#boardWriteLabel {
+#board-write-label {
     width: 100px;
     height: 30px;
     display: flex;
     justify-content: center;
 }
 
-#boardWriteContentForm {
+#board-write-content-form {
     box-sizing: border-box;
     width: 100%;
 }
 
-#boardWriteTitle>input {
+#board-write-title>input {
     box-sizing: border-box;
     display: inline;
     width: 540px;
@@ -159,7 +159,7 @@
     font-size: 1rem;
 }
 
-#boardWriteContentForm>form>p>textarea {
+#board-write-content-form>form>p>textarea {
     box-sizing: border-box;
     width: 100%;
     height: 300px;
@@ -170,7 +170,7 @@
     /* 사이즈 고정 */
 }
 
-.writeRegBtn {
+.write-reg-btn {
     position: relative;
     left: 750px;
     bottom: -10px;
@@ -180,7 +180,7 @@
     font-size: 1rem;
 }
 
-.postNavForm {
+.post-nav-form {
     box-sizing: border-box;
     width: 100%;
     display: block;
@@ -188,14 +188,14 @@
     margin-top: 10px;
 }
 
-.postNavSubForm {
+.post-nav-sub-form {
     box-sizing: border-box;
     display: block;
     width: 100%;
     margin-bottom: 10px;
 }
 
-.boardList {
+.board-list {
     position: relative;
     left: 747px;
     top: -55px;

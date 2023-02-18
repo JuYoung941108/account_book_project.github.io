@@ -1,0 +1,62 @@
+/* a-side(가계부 테이블) */
+.account-book-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1900px;
+    height: auto;
+    justify-content: left;
+}
+
+.a-side {
+    box-sizing: border-box;
+    width: 450px;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 1450px;
+    /* border: 1px solid red; */
+}
+
+.account-book-talbe {
+    box-sizing: border-box;
+    width: 450px;
+    margin: auto;
+    font-size: 13px;
+}
+
+.account-book-talbe>thead>tr>th {
+    padding: 4px;
+    color: white;
+    background-color: #11264F;
+    border: 1px solid black;
+}
+
+.account-book-talbe>tbody>tr>td {
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.account-book-category,
+.main-category {
+    color: white;
+    background-color: #11264F;
+}
+
+.total{
+    color: white;
+    background-color: #11264F;
+}
+
+/* content(차트) */
+
+/* sheet-tap */
+.sheet-tap{
+    display: flex;
+    width: 1900px;
+    height: 35px;
+    background-color: lightgray;
+}

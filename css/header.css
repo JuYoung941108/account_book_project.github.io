@@ -20,21 +20,22 @@ header>a {
     color: white;
 }
 
-.menuIcon>svg {
+.menu-icon>svg {
     box-sizing: border-box;
     width: 40px;
     height: 50px;
     color: white;
 }
 
-.headerSignForm {
+.header-sign-form {
     box-sizing: border-box;
     display: flex;
     width: 40%;
-    justify-content: space-around;
+    justify-content: end;
+    font-size: 0.8rem;
 }
 
-.headerSignForm>a {
+.header-sign-form>a {
     box-sizing: border-box;
     line-height: 50px;
     margin-right: 10px;
@@ -44,23 +45,23 @@ header>a {
     color: white;
 }
 
-.headerSignForm>span {
+.header-sign-form>span {
     box-sizing: border-box;
     line-height: 50px;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 5px 0px 5px;
     font-weight: bold;
     color: white;
 }
 
-.headerSignForm>input {
-    margin: 10px 10px 10px 0px;
-    font-size: 0.9;
+.sign-form {
+    width: 170px;
+    margin: 10px 0px 10px 0px;
     font-weight: bold;
 }
 
-.signUpButton {
-    width: 65px;
-    margin: 10px 10px 10px 10px;
+.sign-up-btn {
+    width: 70px;
+    margin: 10px 5px 10px 10px;
 }
 
 .menu {
@@ -93,15 +94,15 @@ header>a {
         color: white;
     }
 
-    .headerSignForm>span {
+    .header-sign-form>span {
         display: none;
     }
 
-    .headerSignForm {
+    .header-sign-form {
         width: 70%;
     }
 
-    .headerSignForm>a {
+    .header-sign-form>a {
         box-sizing: border-box;
         line-height: 50px;
         text-decoration: none;

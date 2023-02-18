@@ -14,7 +14,7 @@ section {
 }
 
 /* index */
-.idxBox {
+.idx-box {
     box-sizing: border-box;
     width: 1600px;
     margin: auto;
@@ -23,7 +23,7 @@ section {
     border-radius: 30px;
 }
 
-#bText {
+#b-text {
     display: block;
     width: 100%;
     line-height: 70px;
@@ -32,7 +32,7 @@ section {
     word-spacing: 20px;
 }
 
-#mText {
+#m-text {
     display: block;
     width: 100%;
     line-height: 70px;
@@ -42,7 +42,7 @@ section {
 
 }
 
-#sText {
+#s-text {
     display: block;
     width: 100%;
     font-size: 1.3rem;
@@ -51,7 +51,7 @@ section {
 }
 
 /* signUp */
-.signForm {
+.signUpForm {
     display: block;
     width: 30%;
     margin: auto;
@@ -59,24 +59,24 @@ section {
     text-align: center;
 }
 
-#signSubForm {
+#signUpSubForm {
     display: flex;
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
 }
 
-.signForm>input {
+.signUpForm>input {
     margin-top: 30px;
 }
 
-.signForm>#signSubForm>label {
+.signUpForm>#signUpSubForm>label {
     display: flex;
     width: 65px;
     line-height: 20px;
 }
 
-.signForm>#signSubForm>input {
+.signUpForm>#signUpSubForm>input {
     width: 200px;
     margin-right: 10px;
     font-size: 1rem;
@@ -87,7 +87,7 @@ section {
 }
 
 @media(max-width:1000px) {
-    .signForm {
+    .signUpForm {
         width: 60%;
     }
 
@@ -167,7 +167,7 @@ section {
 }
 
 /* 나중에 지우기 */
-section>.testText {
+.test-text {
     display: block;
     padding: 30px;
     text-align: center;

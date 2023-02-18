@@ -1,6 +1,6 @@
 // header
 let dropDownMenu = true;
-$(".menuIcon").click(() => {
+$(".menu-icon").click(() => {
     if (dropDownMenu) {
         $(".menu").slideDown(500);
     } else {
@@ -26,7 +26,7 @@ function writeCancel() {
 // signUp
 function checkBlankForm() {
     // document.body..offsetWidth: 브라우저 크기를 기준으로 팝업창을 중앙에 띄운다.
-    let popX=(document.body.offsetWidth/2)-(200/2);
+    let popX=(document.body.offsetWidth/2.5)-(200/2);
     window.open('sign_up_check.html', '_black', 'width=460, height=450, resizable=no, titlebar=yes, left='+popX);
 }
 

@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Book</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/board.css">
     <script defer src="js/common.js"></script>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="menuIcon">
+        <div class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -37,33 +37,33 @@
 
         <a href="index.html">Account Book</a>
 
-        <div class="headerSignForm">
+        <div class="header-sign-form">
             <a href="sign_up.html">간편 회원가입</a>
+            <a href="sign_up.html">마이페이지</a>
             <span>이메일</span>
-            <input type="email" placeholder="user@email.com">
+            <input class="sign-form" type="email" placeholder="user@email.com">
             <span>패스워드</span>
-            <input type="password" placeholder="password">
-            <input class="signUpButton" type="button" value="로그인" name="signUp">
-        </div>
+            <input class="sign-form" type="password" placeholder="password">
+            <input class="sign-up-btn" type="button" value="로그인" name="signUp" onclick="alert('테스트')">
         </div>
     </header>
-    
+
     <section>
         <div class="title">글쓰기</div>
-        <div class="boardWriteForm">
-            <div class="boardWriteSubForm1">
-                제목: <span id="boardWriteTitle"><input type="text" placeholder="제목을 입력해 주세요."></div>
-            <div class="boardWriteSubForm2">
-                글 번호: <span id="boardWriteLabel">0</span>
-                작성자: <span id="boardWriteLabel">admin</span><br></div>
-            내용: <div id="boardWriteContentForm">
+        <div class="board-write-form">
+            <div class="board-write-sub-form1">
+                제목: <span id="board-write-title"><input type="text" placeholder="제목을 입력해 주세요."></div>
+            <div class="board-write-sub-form2">
+                글 번호: <span id="board-write-label">0</span>
+                작성자: <span id="board-write-label">admin</span><br></div>
+            내용: <div id="board-write-content-form">
                 <form>
                     <p><textarea placeholder="내용을 입력해 주세요."></textarea></p>
                 </form>
             </div>
-                <input class="writeRegBtn" type="submit" value="취소" onclick="writeCancel()">
-                <input class="writeRegBtn" type="submit" value="완료" onclick="alert('테스트')">
-            </div>
+            <input class="write-reg-btn" type="submit" value="취소" onclick="writeCancel()">
+            <input class="write-reg-btn" type="submit" value="완료" onclick="alert('테스트')">
+        </div>
         </div>
     </section>
     <footer>Footer</footer>

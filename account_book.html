@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Book</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/account_book.css">
     <script defer src="js/common.js"></script>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="menuIcon">
+        <div class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -36,18 +38,308 @@
 
         <a href="index.html">Account Book</a>
 
-        <div class="headerSignForm">
+        <div class="header-sign-form">
             <a href="sign_up.html">간편 회원가입</a>
+            <a href="sign_up.html">마이페이지</a>
             <span>이메일</span>
-            <input type="email" placeholder="user@email.com">
+            <input class="sign-form" type="email" placeholder="user@email.com">
             <span>패스워드</span>
-            <input type="password" placeholder="password">
-            <input class="signUpButton" type="button" value="로그인" name="signUp">
-        </div>
+            <input class="sign-form" type="password" placeholder="password">
+            <input class="sign-up-btn" type="button" value="로그인" name="signUp" onclick="alert('테스트')">
         </div>
     </header>
+
     <section>
-        
+        <div class="account-book-form">
+            <div class="a-side">
+                <!-- 가계부 시작 -->
+                <table class="account-book-talbe">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">대분류</th>
+                            <th style="width: auto;">소분류</th>
+                            <th style="width: 80px;">금액</th>
+                            <th style="width: 70px;">퍼센티지</th>
+                            <th style="width: 70px; ">전월대비</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="main-category" rowspan="11"><br><br><br><br><br><br><br><br><br>수입</td>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr class="total">
+                            <td>합계</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td class="main-category" rowspan="11"><br><br><br><br><br><br><br><br><br>저축</td>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr>
+                            <td>카테고리</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                        <tr class="total">
+                            <td>합계</td>
+                            <td>0원</td>
+                            <td>0%</td>
+                            <td>▲ 0원</td>
+                        </tr>
+                    </tbody>
+                    <tr>
+                        <td class="main-category" rowspan="21"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>지출</td>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <td>카테고리</td>
+                    <td>0원</td>
+                    <td>0%</td>
+                    <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    <tr class="total">
+                        <td>합계</td>
+                        <td>0원</td>
+                        <td>0%</td>
+                        <td>▲ 0원</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- 가계부 끝 -->
+            </div>
+
+            <!-- 차트 시작 -->
+            <div class="content"></div>
+            <!-- 차트 끝 -->
+            
+            <!-- 시트 탭 시작 -->
+            <div class="sheet-tap">
+                
+            </div>
+            <!-- 시트 탭 끝 -->
+        </div>
     </section>
     <footer>Footer</footer>
 </body>

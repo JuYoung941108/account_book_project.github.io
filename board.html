@@ -7,22 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Book</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/board.css">
     <script defer src="js/common.js"></script>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <style>
-        section{
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div class="menuIcon">
+        <div class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -41,31 +37,32 @@
 
         <a href="index.html">Account Book</a>
 
-        <div class="headerSignForm">
+        <div class="header-sign-form">
             <a href="sign_up.html">간편 회원가입</a>
+            <a href="sign_up.html">마이페이지</a>
             <span>이메일</span>
-            <input type="email" placeholder="user@email.com">
+            <input class="sign-form" type="email" placeholder="user@email.com">
             <span>패스워드</span>
-            <input type="password" placeholder="password">
-            <input class="signUpButton" type="button" value="로그인" name="signUp">
-        </div>
+            <input class="sign-form" type="password" placeholder="password">
+            <input class="sign-up-btn" type="button" value="로그인" name="signUp" onclick="alert('테스트')">
         </div>
     </header>
+
     <section>
         <div class="title">게시판</div>
-        <div class="boardMenuForm">
-            <div class="boardMenu"><a class="" href="javascript:void(0)">자유 게시판</a></div>
-            <div class="boardMenu"><a class="" href="javascript:void(0)">질문 게시판</a></div>
-            <div class="boardMenu"><a class="" href="javascript:void(0)">건의 게시판</a></div>
+        <div class="board-menu-form">
+            <div class="board-menu"><a class="" href="javascript:void(0)">자유 게시판</a></div>
+            <div class="board-menu"><a class="" href="javascript:void(0)">질문 게시판</a></div>
+            <div class="board-menu"><a class="" href="javascript:void(0)">건의 게시판</a></div>
         </div>
         <table class="board">
             <thead>
                 <tr>
-                    <th class="boardNum">글 번호</th>
-                    <th class="boardTitle">제목</th>
-                    <th class="boardWiter">작성자</th>
-                    <th class="boardDate">작성일</th>
-                    <th class="boardChk">조회수</th>
+                    <th class="board-num">글 번호</th>
+                    <th class="board-title">제목</th>
+                    <th class="board-writer">작성자</th>
+                    <th class="board-date">작성일</th>
+                    <th class="board-chk">조회수</th>
                 </tr>
             </thead>
             <tbody>
@@ -106,18 +103,21 @@
                 </tr>
             </tbody>
         </table>
-        <div class="searchForm">
-            <div class="pagination">1 2 3 4 5 <input class="wirteBtn" type="button" value="글쓰기" onclick="boardWrite()"></div>
-            
-            <div class="searchSubForm">
-            <div class="searchIcon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
+        <div class="serach-form">
+            <div class="pagination">1 2 3 4 5 <input class="wirte-btn" type="button" value="글쓰기" onclick="boardWrite()">
             </div>
-            <input class="searchBar" type="text" placeholder="검색창">
-            <input class="searchBtn" type="button" value="검색" onclick="alert('테스트')">
-        </div>
+
+            <div class="search-sub-form">
+                <div class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </div>
+                <input class="search-bar" type="text" placeholder="검색창">
+                <input class="search-btn" type="button" value="검색" onclick="alert('테스트')">
+            </div>
         </div>
     </section>
     <footer>Footer</footer>
