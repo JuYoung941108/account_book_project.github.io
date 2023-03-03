@@ -1,13 +1,22 @@
 // header
 let dropDownMenu = true;
+// $(".menu-icon").click(() => {
+//     if (dropDownMenu) {
+//         $(".sub_menu").slideDown(700);
+//     } else {
+//         $(".sub_menu").slideUp(700);
+//     }
+//     dropDownMenu = !dropDownMenu;
+// })
+
 $(".menu-icon").click(() => {
-    if (dropDownMenu) {
-        $(".menu").slideDown(500);
-    } else {
-        $(".menu").slideUp(500);
-    }
-    dropDownMenu = !dropDownMenu;
+        $(".sub_menu").slideToggle();
 })
+
+// index
+function signUp() {
+    location.href = "sign_up.html";
+}
 
 // board
 function boardWrite() {

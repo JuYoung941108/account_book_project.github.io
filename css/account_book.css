@@ -3,9 +3,12 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    width: 1900px;
-    height: auto;
+    width: 100%;
+    width: 1510px;
+    /* height: auto; */
+    margin-left: 5px;
     justify-content: left;
+    overflow: auto;
 }
 
 .a-side {
@@ -15,7 +18,7 @@
 
 .content {
     box-sizing: border-box;
-    width: 1450px;
+    width: 100%;
     /* border: 1px solid red; */
 }
 
@@ -23,40 +26,41 @@
     box-sizing: border-box;
     width: 450px;
     margin: auto;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .account-book-talbe>thead>tr>th {
     padding: 4px;
-    color: white;
-    background-color: #11264F;
-    border: 1px solid black;
+    background-color: aliceblue;
+    border: 1px solid lightgrey;
 }
 
 .account-book-talbe>tbody>tr>td {
     padding: 4px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 .account-book-category,
 .main-category {
-    color: white;
-    background-color: #11264F;
+    background-color: aliceblue;
+    border: 1px solid lightgrey;
 }
 
 .total{
-    color: white;
-    background-color: #11264F;
+    background-color: aliceblue;
+    border: 1px solid lightgrey;
 }
 
 /* content(차트) */
 
 /* sheet-tap */
 .sheet-tap{
+    box-sizing: border-box;
     display: flex;
-    width: 1900px;
+    width: 100%;
     height: 35px;
+    margin-top: 5px;
     background-color: lightgray;
 }

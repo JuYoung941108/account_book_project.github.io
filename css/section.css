@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 section {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    height: 1200px;
-    margin-bottom: 100px;
+    height: 100%;
+    margin-bottom: 50px;
     overflow: auto;
 }
 
@@ -14,49 +22,76 @@ section {
 }
 
 /* index */
+.idx-form {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.carousel-inner>.carousel-item>img {
+    width: 100%;
+    background-size: auto;
+}
+
+/* 회원가입 버튼 */
+.sign-up-btn {
+    display: block;
+    margin: auto;
+}
+
 .idx-box {
     box-sizing: border-box;
-    width: 1600px;
-    margin: auto;
-    padding: 20px 0px 0px 30px;
-    background-color: whitesmoke;
-    border-radius: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #EFF5FF;
 }
 
 #b-text {
+    font-family: 'Anton';
     display: block;
     width: 100%;
     line-height: 70px;
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 100;
     word-spacing: 20px;
 }
 
 #m-text {
+    font-family: 'IBMPlexSansKR-Regular';
     display: block;
     width: 100%;
     line-height: 70px;
     margin: 5px 0px 5px 0px;
     font-size: 2.5rem;
     word-spacing: 10px;
-
+    
 }
 
 #s-text {
+    font-family: 'IBMPlexSansKR-Regular';
     display: block;
     width: 100%;
     font-size: 1.3rem;
     line-height: 50px;
-    word-spacing: 10px;
+    word-spacing: 8px;
 }
 
 /* signUp */
 .signUpForm {
     display: block;
-    width: 30%;
+    width: 50%;
     margin: auto;
-    margin-top: 50px;
     text-align: center;
+    border: 1px solid red;
 }
 
 #signUpSubForm {
@@ -86,9 +121,9 @@ section {
     font-size: 1rem;
 }
 
-@media(max-width:1000px) {
+/* @media(max-width:1000px) {
     .signUpForm {
-        width: 60%;
+        width: 80%;
     }
 
     .headerSignForm>span {
@@ -106,7 +141,7 @@ section {
         font-weight: bold;
         color: white;
     }
-}
+} */
 
 /* signUpCheck */
 .signChkForm {

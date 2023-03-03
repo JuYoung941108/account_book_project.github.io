@@ -13,50 +13,58 @@
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
     <script defer src="js/common.js"></script>
+    <style> section {height: 700px;} </style>
 </head>
 
 <body>
     <header>
         <div class="menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
         </div>
+
+        <a href="index.html">가계부 프로젝트</a>
+
         <div class="menu">
-            <a href="board.html">공지사항</a>
-            <a href="account_book_menual.html">홈페이지 사용법</a>
-            <a href="account_book.html">월별 가계부</a>
-            <a href="asset_status.html">자산현황</a>
-            <a href="board.html">자유 게시판</a>
-            <a href="board.html">질문 게시판</a>
-            <a href="board.html">건의 게시판</a>
-        </div>
-
-        <a href="index.html">Account Book</a>
-
-        <div class="header-sign-form">
-            <a href="sign_up.html">간편 회원가입</a>
-            <a href="sign_up.html">마이페이지</a>
-            <span>이메일</span>
-            <input class="sign-form" type="email" placeholder="user@email.com">
-            <span>패스워드</span>
-            <input class="sign-form" type="password" placeholder="password">
-            <input class="sign-up-btn" type="button" value="로그인" name="signUp" onclick="alert('테스트')">
-        </div>
+            <li><a href="board.html">공지사항</a>
+                <ui class="sub_menu">
+                </ui>
+            </li>
+            <li><a href="account_book_menual.html">가계부</a>
+                <ui class="sub_menu">
+                    <a href="account_book_menual.html">설명서</a>
+                    <a href="account_book.html">월별 가계부</a>
+                    <a href="asset_status.html">자산현황</a>
+                </ui>
+            </li>
+            <li><a href="board.html">커뮤니티</a>
+                <ui class="sub_menu">
+                    <a href="board.html">자유 게시판</a>
+                    <a href="board.html">질문 게시판</a>
+                    <a href="board.html">건의 게시판</a>
+                </ui>
+            </li>
+            <li><a href="sign_up.html">간편 회원가입</a>
+                <ui class="sub_menu">
+                </ui>
+            </li>
+            <li><a href="sign_in.html">로그인</a>
+                <ui class="sub_menu">
+                </ui></li>
+            </ul>
     </header>
 
     <section>
-        <div class="title">회원가입 페이지</div>
-        <div class="signUpForm">
+        <div class="title">회원가입</div>
+        <!-- <div class="signUpForm">
             <div id="signUpSubForm"><label>이메일</label><input type="email" placeholder="user@email.com"></div>
             <div id="signUpSubForm"><label>비밀번호</label><input type="password" placeholder="●●●●●●●●"><label
                     style="display: flex; width: 230px; justify-content: left;">대소문자/특수문자 조합 8자리 이상</label></div>
             <div id="signUpSubForm"><label>닉네임</label><input type="password" placeholder=""><label
                     style="display: flex; width: 230px; justify-content: left;">3자리 이상</label></div>
             <input class="signUpBtn" type="submit" value="회원가입" onclick="checkBlankForm()">
-        </div>
+        </div> -->
     </section>
     <footer>Footer</footer>
 </body>

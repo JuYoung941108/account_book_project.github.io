@@ -12,7 +12,7 @@
     width: 100%;
     padding: 5px 0px 5px 0px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 .board-menu>a {
@@ -29,15 +29,16 @@
 
 .board>thead>tr>th {
     padding: 10px;
-    background-color: lightgray;
-    border: 1px solid black;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
 }
 
 .board>tbody>tr>td {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 .board>tbody>tr>td>a {
@@ -49,11 +50,11 @@
 .board-writer,
 .board-date,
 .board-chk {
-    width: 100px;
+    width: 120px;
 }
 
 .board-title {
-    width: 500px;
+    width: 420px;
 }
 
 .serach-form {
@@ -62,27 +63,54 @@
     flex-wrap: wrap;
     width: 900px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 5px;
+}
+
+.pagination-form {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 38px;
+    margin: 0px 0px 5px 0px;
+    justify-content: center;
+    text-align: center;
 }
 
 .pagination {
-    box-sizing: border-box;
+    position: relative;
+    left: 40px;
     display: flex;
-    justify-content: center;
     width: 100%;
-    padding-left: 80px;
-    font-size: 1.1rem;
+    justify-content: center;
+}
+
+.pagination>li>a {
+    color: black;
+}
+
+.page-item.active .page-link {
+    color: #555;
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}
+
+.page-link:focus,
+.page-link:hover {
+    color: #000;
+    background-color: #fafafa;
+    border-color: #ccc;
 }
 
 .search-sub-form {
     box-sizing: border-box;
     display: flex;
-    width: 100%;
+    width: 102%;
     padding-left: 55px;
     justify-content: center;
 }
 
 .search-icon {
+    height: 100%;
     margin-right: 5px;
     text-align: center;
     color: black;
@@ -90,7 +118,7 @@
 
 .search-bar {
     width: 400px;
-    height: 25px;
+    height: 100%;
     margin-right: 5px;
     text-align: center;
     font-size: 1rem;
@@ -98,15 +126,17 @@
 
 .search-btn {
     width: 70px;
+    height: 38px;
     margin-right: 5px;
     font-size: 1rem;
 }
 
 .wirte-btn {
     position: relative;
-    left: 340px;
+    left: 258px;
     box-sizing: border-box;
     width: 70px;
+    height: 38px;
     font-size: 1rem;
 }
 
@@ -173,19 +203,18 @@
 .write-reg-btn {
     position: relative;
     left: 750px;
-    bottom: -10px;
+    bottom: 18px;
     width: 70px;
-    height: 30px;
     margin-left: 5px;
-    font-size: 1rem;
 }
 
 .post-nav-form {
+    position: relative;
+    top: -20px;
     box-sizing: border-box;
     width: 100%;
     display: block;
     /* justify-content: end; */
-    margin-top: 10px;
 }
 
 .post-nav-sub-form {
@@ -198,9 +227,9 @@
 .board-list {
     position: relative;
     left: 747px;
-    top: -55px;
+    top: -67px;
     width: 70px;
-    height: 30px;
+    height: 38px;
     margin-left: 5px;
     font-size: 1rem;
 }
